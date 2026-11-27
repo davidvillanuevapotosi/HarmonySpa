@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f5f5f7; color: #222; }
+main { max-width: 960px; margin: 1.5rem auto; padding: 0 1rem; }
+.center { text-align: center; margin-top: 3rem; }
+.bar { display: flex; align-items: center; gap: 1rem; padding: .7rem 1rem; background: #fff; border-bottom: 1px solid #ddd; }
+.bar nav { display: flex; gap: .3rem; }
+.grow { flex: 1; }
+.muted { color: #777; font-size: .9rem; }
+.error { color: #b00020; font-size: .9rem; }
+.ok { color: #1b7a3a; font-size: .9rem; }
+.card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1.2rem; display: flex; flex-direction: column; gap: .7rem; }
+.card h2, .card h3 { margin: 0; }
+.login { max-width: 340px; margin: 5rem auto; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+label { display: flex; flex-direction: column; gap: .25rem; font-size: .9rem; }
+input, select { padding: .5rem; border: 1px solid #ccc; border-radius: 6px; font: inherit; }
+button { padding: .45rem .8rem; border: 1px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer; font: inherit; }
+button.primary { background: #4a4ae0; border-color: #4a4ae0; color: #fff; }
+button.active { background: #eee; }
+button:disabled { opacity: .5; cursor: default; }
+.row { display: flex; align-items: center; gap: .5rem; margin: .8rem 0; flex-wrap: wrap; }
+.row.end { justify-content: flex-end; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
+table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #ddd; }
+th, td { padding: .55rem .7rem; text-align: left; border-bottom: 1px solid #eee; font-size: .9rem; }
+td.actions { display: flex; gap: .3rem; justify-content: flex-end; }
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.4); display: flex; align-items: center; justify-content: center; padding: 1rem; overflow: auto; }
+.modal { width: 100%; max-width: 520px; max-height: 95vh; overflow: auto; }
